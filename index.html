@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Yassine Hamdi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="yassine.jpg" />
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Section d'en-tête -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="container mx-auto flex justify-between items-center p-4 sm:p-6"
+      >
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-blue-600">
+          Yassine Hamdi
+        </h1>
+        <nav>
+          <ul class="hidden md:flex space-x-6">
+            <li>
+              <a href="#home" class="hover:text-blue-500 transition-colors"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <a href="#projects" class="hover:text-blue-500 transition-colors"
+                >Projets</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-blue-500 transition-colors"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <!-- Menu Mobile -->
+          <div class="md:hidden">
+            <button id="menu-toggle" class="focus:outline-none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-blue-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </div>
+      <ul
+        id="mobile-menu"
+        class="hidden flex flex-col items-center bg-gray-100 md:hidden"
+      >
+        <li>
+          <a href="#home" class="block py-2 hover:text-blue-500">Accueil</a>
+        </li>
+        <li>
+          <a href="#projects" class="block py-2 hover:text-blue-500">Projets</a>
+        </li>
+        <li>
+          <a href="#contact" class="block py-2 hover:text-blue-500">Contact</a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- Section Héros -->
+    <section
+      id="home"
+      class="relative bg-cover bg-center h-[80vh]"
+      style="background-image: url('votre-image.jpg')"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-black via-transparent to-gray-800 opacity-90"
+      ></div>
+      <div
+        class="absolute inset-0 flex flex-col items-center justify-center text-white px-4 sm:px-6 md:px-12"
+      >
+        <h2 class="text-3xl sm:text-5xl md:text-7xl font-bold mb-6">
+          Bienvenue, je suis <span class="text-blue-500">Yassine Hamdi</span>
+        </h2>
+        <p class="text-base sm:text-lg md:text-2xl mb-6 text-center">
+          Développeur Web et Concepteur passionné
+        </p>
+        <a
+          href="#contact"
+          class="px-6 py-3 bg-blue-500 rounded-lg text-white font-bold shadow-lg hover:bg-blue-600 transition transform hover:scale-105"
+        >
+          Contactez-moi
+        </a>
+      </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="skills" class="container mx-auto py-12 px-4 sm:px-6">
+      <h3
+        class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-800"
+      >
+        Mes Compétences
+      </h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div
+          class="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition"
+        >
+          <h4 class="text-xl sm:text-2xl font-bold mb-4 text-blue-600">
+            Développement Web
+          </h4>
+          <p class="text-sm sm:text-base">
+            HTML, CSS, JavaScript, React, Tailwind CSS
+          </p>
+        </div>
+        <div
+          class="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition"
+        >
+          <h4 class="text-xl sm:text-2xl font-bold mb-4 text-blue-600">
+            Design UI/UX
+          </h4>
+          <p class="text-sm sm:text-base">Figma, Adobe XD, Animation CSS</p>
+        </div>
+        <div
+          class="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition"
+        >
+          <h4 class="text-xl sm:text-2xl font-bold mb-4 text-blue-600">
+            Backend & Bases de Données
+          </h4>
+          <p class="text-sm sm:text-base">Node.js, Express, MongoDB</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects" class="bg-gray-100 py-12 px-4 sm:px-6">
+      <div class="container mx-auto">
+        <h3
+          class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-800"
+        >
+          Mes Projets
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Projet 1 -->
+          <div
+            class="group relative bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition"
+          >
+            <img
+              src="project1.jpg"
+              alt="Projet 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h4 class="text-lg sm:text-xl font-bold mb-2">
+                Gestion des Tâches
+              </h4>
+              <p class="text-sm sm:text-base text-gray-600">
+                Outil de gestion des tâches avec React.
+              </p>
+            </div>
+            <div
+              class="absolute inset-0 bg-blue-600 bg-opacity-75 flex items-center justify-center opacity-0 group-hover:opacity-100 transition"
+            >
+              <a href="#" class="text-white font-bold text-lg"
+                >Voir le Projet</a
+              >
+            </div>
+          </div>
+          <!-- Projet 2 -->
+          <div
+            class="group relative bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition"
+          >
+            <img
+              src="project2.jpg"
+              alt="Projet 2"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h4 class="text-lg sm:text-xl font-bold mb-2">
+                Site de Portfolio
+              </h4>
+              <p class="text-sm sm:text-base text-gray-600">
+                Création d'un portfolio interactif avec Tailwind CSS.
+              </p>
+            </div>
+            <div
+              class="absolute inset-0 bg-blue-600 bg-opacity-75 flex items-center justify-center opacity-0 group-hover:opacity-100 transition"
+            >
+              <a href="#" class="text-white font-bold text-lg"
+                >Voir le Projet</a
+              >
+            </div>
+          </div>
+          <!-- Projet 3 -->
+          <div
+            class="group relative bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition"
+          >
+            <img
+              src="project3.jpg"
+              alt="Projet 3"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h4 class="text-lg sm:text-xl font-bold mb-2">
+                E-commerce Minimaliste
+              </h4>
+              <p class="text-sm sm:text-base text-gray-600">
+                Développement d'une plateforme e-commerce avec des
+                fonctionnalités modernes.
+              </p>
+            </div>
+            <div
+              class="absolute inset-0 bg-blue-600 bg-opacity-75 flex items-center justify-center opacity-0 group-hover:opacity-100 transition"
+            >
+              <a href="#" class="text-white font-bold text-lg"
+                >Voir le Projet</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    >
+
+    <!-- Formulaire de Contact -->
+    <section id="contact" class="bg-white py-12 px-4 sm:px-6">
+      <div class="container mx-auto">
+        <h3
+          class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-800"
+        >
+          Contactez-moi
+        </h3>
+        <form
+          action="#"
+          method="POST"
+          class="max-w-lg mx-auto bg-gray-100 p-6 rounded-lg shadow-lg"
+        >
+          <div class="mb-4">
+            <label
+              for="name"
+              class="block text-sm sm:text-base font-bold text-gray-700 mb-2"
+              >Nom</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-full border-gray-300 rounded-lg p-3"
+              placeholder="Votre nom"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              for="email"
+              class="block text-sm sm:text-base font-bold text-gray-700 mb-2"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full border-gray-300 rounded-lg p-3"
+              placeholder="Votre email"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              for="message"
+              class="block text-sm sm:text-base font-bold text-gray-700 mb-2"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              class="w-full border-gray-300 rounded-lg p-3 h-32"
+              placeholder="Votre message"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-blue-500 text-white py-3 rounded-lg font-bold shadow-lg hover:bg-blue-600 transition"
+          >
+            Envoyer
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 Yassine Hamdi. Tous droits réservés.</p>
+      </div>
+    </footer>
+  </body>
+</html>
